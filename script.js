@@ -9,3 +9,14 @@ document.querySelectorAll('.navs').forEach(nav => {
     }
   });
 });
+
+document.getElementById("banking-btn").addEventListener("click", function(){
+  window.location.href = "https://github.com/Patk-Tuy/MazeBank";
+});
+document.getElementById("weather-btn").addEventListener("click", function(){
+  window.location.href = "https://github.com/Patk-Tuy/Weather-Widget-JavaFX";
+});
+document.getElementById("sat-data-btn").addEventListener("click", function(){
+  window.location.href = "https://github.com/Nzabinesha/lab-1_sateliteDataAnalysis";
+});
+
