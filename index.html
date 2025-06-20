@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Tuyizere</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("YxDaq1tZ9dNhZc15X");
+        })();
+    </script>
+    <script src="email.js"></script>
+</head>
+<body>
+    <div id="profile">
+        <p>Hi, I'm</p>
+        <h1>Patrick Tuyizere</h1>
+        <div id="circle-container">
+            <img src="./assets/profile-alt.png" alt="Profile photo" />
+        </div>
+        <h3>Fullstack Developer</h3>
+    </div>
+    <br>
+    <br>
+    <section id="nav-container">
+        <div class="glass navs" data-target="#about">
+            <h3>About</h3>
+        </div>
+        <div class="glass navs" data-target="#experience">
+            <h3>Experience</h3>
+        </div>
+        <div class="glass navs" data-target="#projects">
+            <h3>Projects</h3>
+        </div>
+        <div class="glass navs" data-target="#contact">
+            <h3>Contact</h3>
+        </div>
+    </section>
+    <section id="about" class="flex-card-column">
+        <h1>About Me</h1>
+        <div class="section-container">
+            <div class="about-card flex-card-column">
+                <img src="./assets/experience.png" />
+                <h3>Experience</h3>
+                <p>1.5 years</p>
+                <p>Fullstack Development</p>
+            </div>
+            <div class="about-card flex-card-column">
+                <img src="./assets/education.png" />
+                <h3>Education</h3>
+                <p>On-going B.Sc Bachelors Degree</p>
+                <p>Software Engineering</p>
+            </div>
+        </div>
+        <div class="about-dialog flex-card-column">
+                <p>I'm Patrick Tuyizere, a Software Engineering student at the African Leadership University with a passion for building impactful digital solutions. Alongside my academic journey, I've gained hands-on experience through real-world projects and internships, which have helped sharpen my technical and problem-solving skills. I'm also a self-taught developer who enjoys exploring new technologies, learning independently, and continuously improving my craft. I'm driven by curiosity and a desire to create software that makes a difference.</p>
+        </div>
+    </section>
+    <section id="experience" class="flex-card-column">
+        <h1>Technical Expertise</h1>
+        <p class="exp-sub-heading">
+            I have varying levels of experience in multiple front-end and back-end development.
+        </p>
+        <div class="exp-section-container">
+            <div class="experience-card">
+                <h3>Core Technologies</h3>
+                <p>Javascript</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 75%;"></div>
+                </div>
+                <br>
+                <br>
+                <p>HTML</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 97%;"></div>
+                </div>
+                <br>
+                <br>
+                <p>CSS</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 80%;"></div>
+                </div>
+                <br>
+                <br>
+                <p>Python</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 80%;"></div>
+                </div>
+                <br>
+                <br>
+                <p>Java</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 99%;"></div>
+                </div>
+                <br>
+                <br>
+                <p>React</p>
+                <div class="frozen-progress">
+                    <div class="frozen-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="flex-card-column">
+        <div class="proj-section-container">
+            <h1>Some Projects</h1>
+            <div class="proj-card-container">
+                <div class="projects-card">
+                    <div class="proj-img-card">
+                        <img src="./assets/banking app.png" />
+                    </div>
+                    <h1>Banking Portal</h1>
+                    <button class="icon-button"><i class="fa-brands fa-github"></i> Github</button>
+                </div>
+                <div class="projects-card">
+                    <div class="proj-img-card">
+                        <img src="./assets/weather.png" />
+                    </div>
+                    <h1>Weather Widget</h1>
+                    <button class="icon-button"><i class="fa-brands fa-github"></i> Github</button>
+                </div>
+                <div class="projects-card">
+                    <div class="proj-img-card">
+                        <img src="./assets/code.jpg" />
+                    </div>
+                    <h1>Sat Data Analysis</h1>
+                    <button class="icon-button"><i class="fa-brands fa-github"></i> Github</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Reach Out</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="icon-button" onclick="sendEmail()"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      <p id="formMessage" style="margin-top: 1em;"></p>
+    </section>
+
+<script src="script.js"></script>   
+</body>
+</html>

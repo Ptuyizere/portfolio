@@ -1,0 +1,104 @@
+/* === MOBILE DEVICES (≤ 768px) === */
+@media (max-width: 768px) {
+  #profile h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  #profile p {
+    font-size: 1.5rem;
+  }
+
+  #profile h3 {
+    font-size: 1.5rem;
+  }
+
+  #circle-container {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  #nav-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .navs {
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-card {
+    width: 80%;
+  }
+
+  .about-dialog p {
+    max-width: 90%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .exp-section-container {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+
+  .projects-card {
+    max-width: 90%;
+  }
+
+  .proj-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #contactForm {
+    width: 90%;
+  }
+
+  .icon-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* === TABLETS (769px - 1024px) === */
+@media (max-width: 1024px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-card {
+    width: 70%;
+  }
+
+  .proj-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .projects-card {
+    max-width: 45%;
+  }
+
+  .exp-section-container {
+    width: 80%;
+  }
+
+  #circle-container {
+    width: 20vw;
+    height: 20vw;
+  }
+}
